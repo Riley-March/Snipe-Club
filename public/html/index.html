@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Snipe Club</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/style.css">
+<script src="../distro/jquery-2.1.3.min.js"></script>
+</head>
+<body>
+	<div id="overlay-back">
+		<canvas id="canvas"></canvas>
+	</div>
+
+	<div id="overlay">
+		<div class="container">
+			<br><br>
+			<img src="../images/snipe-club-title.png" width="100%">
+			<br><br><br><br><br><br>
+			<div class="card">
+				<br>
+				<div class="input-group">
+					<input type="text" class="form-control" name="name" id="name" placeholder="Player Name" required=""/>
+				</div><br>
+				<span class="input-group">
+					<button type="button" id="submitButton" class="btn btn-default"><b>    Play    </b></button>
+				</span>
+				<br>
+			</div>	
+		</div>
+	</div>
+
+<script src="../distro/bootstrap.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/Keys.js"></script>
+<script src="../js/Player.js"></script>
+<script src="../js/Camera.js"></script>
+<script src="../js/Map.js"></script>
+<script src="../js/Border.js"></script>
+<script src="../js/Point2D.js"></script>
+<script src="../js/Wall.js"></script>
+<script src="../js/Pellet.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+	init();
+	animate();
+</script>
+
+</body>
+</html>
