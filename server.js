@@ -16,10 +16,10 @@ var squareSize = 50;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.configure(function(){
-	app.use(express.static(path.join(__dirname, 'public')));
-	app.use(express.bodyParser());
-});
+
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(bodyParser());
+
 
 var port = 3000;
 
