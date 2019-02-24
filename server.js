@@ -1,11 +1,8 @@
 var express = require('express');
 var app = express();
 var http = require('http').Server(app);
-var mysql = require('mysql');
-var request = require('request');
 var path = require('path');
-var bodyParser = require('body-parser')
-var fs = require('fs');
+var bodyParser = require('body-parser');
 var socket = require('socket.io')(http);
 var Player = require("./server_modules/Player").Player;
 var Bullet = require("./server_modules/Bullet").Bullet;
@@ -24,8 +21,7 @@ app.configure(function(){
 	app.use(express.bodyParser());
 });
 
-var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
-var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
+var port = 3000;
 
 var setEventHandlers = function() {
 	socket.sockets.on("connection", onSocketConnection);	
@@ -129,9 +125,8 @@ app.post('/checkUsername', function(req, res){
 	}
 });
 
-http.listen(server_port, server_ip_address, function () {
-	console.log("Listening on " + server_ip_address + ", server_port " + server_port)
-	console.log("tester");
+http.listen(port, function () {
+	console.log(`Listening on port ${port}`)
 });
 
 function playerById(id) {

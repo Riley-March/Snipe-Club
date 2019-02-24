@@ -1,15 +1,25 @@
 {
-"scripts":{
-   "start": "node app.js"	
-},
-
-"main": "app.js",
-
-"dependencies" :
-  { "express" : "*"
-  , "mysql" : "*"
-  , "multer" : "*"
-  , "body-parser" : "*"
-  , "socket.io" : "*"
-  }
+  "scripts": {
+    "start": "node server.js"
+  },
+  "main": "app.js",
+  "dependencies": {
+    "express": "*",
+    "body-parser": "*",
+    "socket.io": "*"
+  },
+  "name": "snipe-club",
+  "description": "Snipe Club",
+  "version": "1.0.0",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Riley-March/Snipe-Club.git"
+  },
+  "author": "Riley March",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Riley-March/Snipe-Club/issues"
+  },
+  "homepage": "https://github.com/Riley-March/Snipe-Club#readme"
 }
