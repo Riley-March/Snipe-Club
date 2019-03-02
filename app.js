@@ -4,7 +4,7 @@ var app = express();
 var http = require('http').Server(app);
 var socket = require('socket.io')(http);
 var path = require('path');
-var server_port = 8080;
+var server_port = 3000;
 var server_ip_address = '0.0.0.0';
 
 // Classes

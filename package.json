@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "node server.js"
+    "start": "node app.js"
   },
   "main": "app.js",
   "dependencies": {
