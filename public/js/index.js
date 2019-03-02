@@ -60,11 +60,6 @@ var init = function() {
 		startTime = Date.now();
 		socket.emit("ping");
 		lastPingTimer += 2;
-		if (lastPingTimer >= 4) {
-			// 2 RETRIES WITHOUT RESPONSE:
-			// DISCONNECT:
-			window.alert("You have Been Disconnected");
-		}
 	}, 2000);
 	lastUpdate = Date.now();
 	delta = 0;

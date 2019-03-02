@@ -4,8 +4,8 @@ var app = express();
 var http = require('http').Server(app);
 var socket = require('socket.io')(http);
 var path = require('path');
-var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
-var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
+var server_port = 8080;
+var server_ip_address = '0.0.0.0';
 
 // Classes
 var Player = require("./server_modules/Player").Player;
@@ -14,9 +14,7 @@ var Pellet = require("./server_modules/Pellet").Pellet;
 var Point2D = require("./server_modules/Point2D").Point2D;
 
 // Add public directory for use
-app.configure(function() {
-	app.use(express.static(path.join(__dirname, 'public')));
-});
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Setup Variables
 var players = [];
