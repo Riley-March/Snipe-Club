@@ -21,7 +21,7 @@ We encourage you to run Snipe Club locally, following the installation instructi
 
 To get started with Snipe Club, follow these steps:
 
-1. Clone the repository: git clone https://github.com/yourusername/snipe-club.git
+1. Clone the repository: git clone https://github.com/Riley-March/snipe-club.git
 2. Install the dependencies: npm install
 3. Run the server: npm start
 
