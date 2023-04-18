@@ -2,6 +2,12 @@
 
 Snipe Club is an online multiplayer game inspired by "Agar.io", where players gather energy and destroy opponents by running into them.
 
+## 🚀 Snipe Club Live on Vercel
+
+We're excited to announce that Snipe Club is live on [Vercel](https://vercel.com)! However, please note that Vercel does not support Socket.IO out of the box. Due to this limitation, and to avoid incurring additional hosting costs, the live version of Snipe Club may experience issues related to real-time communication.
+
+We encourage you to run Snipe Club locally, following the installation instructions provided in this README, to enjoy the best multiplayer experience. Your understanding and support are much appreciated. Happy gaming!
+
 ## Table of Contents
 
 1. [Installation](#installation)
